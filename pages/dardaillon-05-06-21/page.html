@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>AI Reading group</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/pages.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center">A gentle introduction to hardware architectures for DNN acceleration</h1>
+    </header>
+
+    <div class="carousel-nav">
+        <a id="home-button" href="../../index.html">home</a>
+        <button id="infos-button" onclick="showContentInfos()">infos</button>
+        <button id="slides-button" onclick="showSlides()">slides</button>
+        <button id="live-button" onclick="showLive()">live</button>
+    </div>
+    <div class="infos">
+        <p class="speaker">Mickaël Dardaillon</p>
+        <p class="date">jun. 5 2021</p>
+        <p class="place">Zoom</p>
+        <ul class="tags">
+            <li>DNN</li>
+        </ul>
+    </div>
+    <div id="content-infos">
+        <p class="abstract">
+            “The synergy between the large datasets in the cloud and the numerous computers that power it has enabled
+            remarkable advancements in machine learning, especially in DNNs. […] That changed in 2013 when a projection
+            in which Google users searched by voice for three minutes per day using speech recognition DNNs would double
+            Google datacenters’ computation demands.”
+
+            This presentation will introduce the concepts behind the hardware architectures used to support current
+            growth in machine learning, including GPUs and TPUs.
+        </p>
+        <hr>
+        <p><a href="https://cacm.acm.org/magazines/2018/9/230571-a-domain-specific-architecture-for-deep-neural-networks/fulltext"
+                class="paper">
+                Norman P. Jouppi, Cliff Young, Nishant Patil, David Patterson. 2018. A Domain-Specific Architecture for
+                Deep Neural Networks.
+            </a></p>
+    </div>
+    <div id="slides" style="aspect-ratio: 4/3;">
+        <iframe src="./docs/slides.pdf"></iframe>
+    </div>
+    <div id="live"><iframe
+            src="https://videos.insa-rennes.fr/video/0256-vaader-reading-group-8-mickael-dardaillon-a-gentle-introduction-to-hardware-architectures-for-dnn-acceleration/?is_iframe=true"
+            allowfullscreen></iframe>
+    </div>
+    <script src="../../src/pages-nav.js"></script>
+    <script>
+        showContentInfos();
+    </script>
+
+</body>
+
+</html>
