@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>AI Reading group</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/pages.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center">ConvNets and humans are not biased towards the same information in images</h1>
+    </header>
+
+    <div class="carousel-nav">
+        <a id="home-button" href="../../index.html">home</a>
+        <button id="infos-button" onclick="showContentInfos()">infos</button>
+        <button id="slides-button" onclick="showSlides()">slides</button>
+        <button id="live-button" onclick="showLive()">live</button>
+    </div>
+    <div class="infos">
+        <p class="speaker">Alban Marie</p>
+        <p class="date">mar. 04, 2021</p>
+        <p class="place">Zoom</p>
+        <ul class="tags">
+            <li>CNN</li>
+        </ul>
+    </div>
+    <div id="content-infos">
+        <p class="abstract">
+            Nowadays, it is well established that ConvNets are able to achieve incredible performance on complex vision
+            task such as classification, object recognition or semantic segmentation. A common thought is that humans
+            and ConvNets are able to solve these tasks by learning increasingly complex representations of object
+            shapes. However, recent studies show that humans and ConvNets have indeed very different strategies by not
+            being biased towards the same information in images. To this end, authors propose a stylized version of
+            ImageNet , allowing ConvNets to learn images representation used by humans easier.
+        </p>
+        <img src="docs/header.jpeg" alt="illustration">
+        <hr>
+        <p><a href="https://arxiv.org/pdf/2101.01169.pdf" class="paper">
+                Robert Geirhos and Patricia Rubisch and Claudio Michaelis and Matthias Bethge and Felix A. Wichmann and
+                Wieland Brendel. 2019. ImageNet-trained CNNs are biased towards texture; increasing shape bias improves
+                accuracy and robustness
+            </a></p>
+    </div>
+    <div id="slides" style="aspect-ratio: 4/3;">
+        <iframe src="./docs/slides.pdf"></iframe>
+    </div>
+    <div id="live">
+        <iframe
+            src="https://videos.insa-rennes.fr/video/0112-vaader-reading-group-4-alban-marie-convnets-and-humans-are-not-biased-towards-the-same-information-in-images/?is_iframe=true"
+            allowfullscreen></iframe>
+    </div>
+    <script src="../../src/pages-nav.js"></script>
+    <script>
+        showContentInfos();
+    </script>
+
+</body>
+
+</html>
