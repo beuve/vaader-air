@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>AI Reading group</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/pages.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center">Optimizing implementation of CNN inferences: change the model or the architecture?</h1>
+    </header>
+
+    <div class="carousel-nav">
+        <a id="home-button" href="../../index.html">home</a>
+        <button id="infos-button" onclick="showContentInfos()">infos</button>
+        <button id="slides-button" onclick="showSlides()">slides</button>
+        <button id="live-button" onclick="showLive()">live</button>
+    </div>
+    <div class="infos">
+        <p class="speaker">Alexandre Honorat</p>
+        <p class="date">apr. 04 2021</p>
+        <p class="place">Zoom</p>
+        <ul class="tags">
+            <li>CNN</li>
+        </ul>
+    </div>
+    <div id="content-infos">
+        <p class="abstract">
+            CNN are now widely used so it is necessary to implement them efficiently. To do so, CNN are most commonly
+            implemented on GPU processors, and also a bit on FPGA. In this talk, without entering into the details, we
+            will list some problems arising when implementing the CNN inferences, especially on FPGA. We will also link
+            these problems to the CNN models themselves and we will highlight a few general recommendations extracted
+            from the following papers.
+        </p>
+        <hr>
+        <p><a href="https://arxiv.org/pdf/1505.06798.pdf" class="paper">
+                Zhang, Xiangyu and Zou, Jianhua and He, Kaiming and Sun, Jian. 2016. Accelerating Very Deep
+                Convolutional Networks for Classification and Detection.
+            </a></p>
+        <p><a href="https://arxiv.org/pdf/1809.04570.pdf" class="paper">
+                Michaela Blott and Thomas Preusser and Nicholas Fraser and Giulio Gambardella and Kenneth O'Brien and
+                Yaman Umuroglu. 2018. FINN-R: An End-to-End Deep-Learning Framework for Fast Exploration of Quantized
+                Neural Networks.
+            </a></p>
+        <p><a href="https://arxiv.org/pdf/1704.04428.pdf" class="paper">
+                Aravind Vasudevan and Andrew Anderson and David Gregg. 2017. Parallel Multi Channel Convolution using
+                General Matrix Multiplication.
+            </a></p>
+    </div>
+    <div id="slides" style="aspect-ratio: 4/3;">
+        <iframe src="./docs/slides.pdf"></iframe>
+    </div>
+    <div id="live"><iframe
+            src="https://videos.insa-rennes.fr/video/0203-vaader-reading-group-6-alexandre-honorat-optimizing-implementation-of-cnn-inferences-change-the-model-or-the-architecture/?is_iframe=true"
+            allowfullscreen></iframe>
+    </div>
+    <script src="../../src/pages-nav.js"></script>
+    <script>
+        showContentInfos();
+    </script>
+
+</body>
+
+</html>
