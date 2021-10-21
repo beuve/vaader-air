@@ -1,3 +1,2 @@
-A Pen created at CodePen.io. You can find this one at http://codepen.io/phasethree/pen/NNOvrW.
-
- 
+# AI Reading group
+## VAADER Team
