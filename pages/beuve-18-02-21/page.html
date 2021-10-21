@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>AI Reading group</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/pages.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center">Image-to-image translation with GANs</h1>
+    </header>
+
+    <div class="carousel-nav">
+        <a id="home-button" href="../../index.html">home</a>
+        <button id="infos-button" onclick="showContentInfos()">infos</button>
+        <button id="slides-button" onclick="showSlides()">slides</button>
+        <button id="live-button" onclick="showLive()">live</button>
+    </div>
+    <div class="infos">
+        <p class="speaker">Nicolas Beuve</p>
+        <p class="date">feb. 18 2021</p>
+        <p class="place">Zoom</p>
+        <ul class="tags">
+            <li>GAN</li>
+        </ul>
+    </div>
+    <div id="content-infos">
+        <p class="abstract">
+            Image-to-image translation is a realm aiming at transposing images from one representation to another, like
+            generating an aerial map of a region based on a photograph. Results in this field were greatly improved
+            since the arrival of GAN models in 2014. GANs (Generative Adversarial Nets) are neural networks, specialized
+            in sample generation. When applied to an image, those models are able to generate convincing samples that
+            are similar to images from a reference dataset while remaining completely original.
+        </p>
+        <img src="docs/header.png" alt="illustration">
+        <hr>
+        <p><a href="https://arxiv.org/pdf/1406.2661.pdf" class="paper">
+                JIan J. Goodfellow and Jean Pouget-Abadie and Mehdi Mirza and Bing Xu and David Warde-Farley and Sherjil
+                Ozair and Aaron Courville and Yoshua Bengio. 2014. Generative Adversarial Nets.
+            </a></p>
+        <p><a href="https://arxiv.org/pdf/1411.1784.pdf" class="paper">
+                Mehdi Mirza and Simon Osindero. 2014. Conditional Generative Adversarial Nets.
+            </a></p>
+        <p><a href="https://arxiv.org/pdf/1611.07004.pdf" class="paper">
+                Phillip Isola and Jun-Yan Zhu and Tinghui Zhou and Alexei A. Efros. 2018. Image-to-Image Translation
+                with Conditional Adversarial Networks.
+            </a></p>
+        <p><a href="https://arxiv.org/pdf/1703.10593.pdf" class="paper">
+                Jun-Yan Zhu and Taesung Park and Phillip Isola and Alexei A. Efros. 2020. Unpaired Image-to-Image
+                Translation using Cycle-Consistent Adversarial Networks.
+            </a></p>
+    </div>
+    <div id="slides" style="aspect-ratio: 4/3;">
+        <iframe src="./docs/slides.pdf"></iframe>
+    </div>
+    <div id="live"><iframe
+            src="https://videos.insa-rennes.fr/video/0086-vaader-reading-group-3-nicolas-beuve-image-to-image-translation-with-gans/ba6f5e7680162671d90b0a383843913e8a0aa40d74142bc480489fc1ebb662ec/?is_iframe=true"
+            allowfullscreen></iframe>
+    </div>
+    <script src="../../src/pages-nav.js"></script>
+    <script>
+        showContentInfos();
+    </script>
+
+</body>
+
+</html>
