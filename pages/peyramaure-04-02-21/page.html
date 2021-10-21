@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>AI Reading group</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/pages.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center">Maybe BERT is all you need ?</h1>
+    </header>
+
+    <div class="carousel-nav">
+        <a id="home-button" href="../../index.html">home</a>
+        <button id="infos-button" onclick="showContentInfos()">infos</button>
+        <button id="slides-button" onclick="showSlides()">slides</button>
+    </div>
+    <div class="infos">
+        <p class="speaker">Paul Peyramaure</p>
+        <p class="date">feb. 04 2021</p>
+        <p class="place">Zoom</p>
+        <ul class="tags">
+            <li>Transformer</li>
+        </ul>
+    </div>
+    <div id="content-infos">
+        <p class="abstract">
+            BERT, which stands for Bidirectional Encoder Representations from Transformer, has been published by a
+            Google AI team in 2018. It has been presented as a new cutting-edge model for Natural Language Processing
+            (NLP). Based on Transformer achitecture, it is design to learn bidirectional representations by considering
+            both the left and right contexts in all its layers.
+            While being initially introduced for NLP tasks, it has recently been used to model other tasks such as
+            action recognition.
+        </p>
+        <img src="docs/header.jpg" alt="illustration">
+        <hr>
+        <p><a href="https://arxiv.org/pdf/1810.04805.pdf" class="paper">
+                Jacob Devlin and Ming-Wei Chang and Kenton Lee and Kristina Toutanova. 2019. BERT: Pre-training of Deep
+                Bidirectional Transformers for Language Understanding.
+            </a></p>
+        <p><a href="https://arxiv.org/pdf/2008.01232.pdf" class="paper">
+                M. Esat Kalfaoglu and Sinan Kalkan and A. Aydin Alatan. 2020. Late Temporal Modeling in 3D CNN
+                Architectures with BERT for Action Recognition.
+            </a></p>
+    </div>
+    <div id="slides">
+        <iframe src="./docs/slides.pdf"></iframe>
+    </div>
+    <script src="../../src/pages-nav.js"></script>
+    <script>
+        showContentInfos();
+    </script>
+
+</body>
+
+</html>
