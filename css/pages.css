@@ -1,0 +1,208 @@
+@font-face {
+    font-family: "FontAwesome";
+    font-weight: normal;
+    font-style : normal;
+           src : url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0");
+           src : url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"),
+                 url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"),
+                 url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"),
+                 url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"),
+                 url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
+    }
+
+.carousel-nav {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  max-width: 600px;
+  width: 80%;
+  margin-top: -35px;
+  color: #FFF;
+  margin-bottom: 30px;
+}
+
+
+.carousel-nav  button{
+  border: unset;
+	background: none;
+	color: inherit;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  height: 30px;
+  width: 100px;
+}
+
+.carousel-nav button:hover {
+  border-bottom: 2px solid;
+  color: #FF6B6B;
+}
+
+.carousel-nav #home-button {
+  border: 2px solid #FFF;
+  border-radius: 5px;
+  padding: 5px 0;
+  width: 100px;
+  text-align: center;
+}
+
+.carousel-nav #home-button:hover  {
+  border: 2px solid #FF6B6B;
+  border-radius: 5px;
+  color: #FF6B6B;
+}
+
+.carousel-nav #home-button:hover::before  {
+  content: "<  ";
+}
+
+.infos {
+  margin-top: 20px;
+  position: absolute;
+  width:300px;
+  left: calc(50% + 340px);
+  border-left: 3px solid #FF6B6B;
+  display: block;
+}
+
+.infos p {
+  margin: 0 0 10px 0;
+}
+
+.infos *:before {
+  font-family: "FontAwesome";
+  color: #FF6B6B;
+  font-size: 1.3em;
+  display: inline-block;
+  width:35px;
+  text-align: center;
+}
+
+.infos .speaker:before {
+  font-size: 1.5em;
+  content: "\f007  ";
+}
+
+.infos .date:before {
+  content: "\f133  ";
+}
+
+.infos .place:before {
+  content: "\f041  ";
+}
+
+/*----------------------------------------------
+    content
+----------------------------------------------*/
+
+#content-infos {
+  max-width:600px;
+  width: 90%;
+  margin: 20px auto 0 auto;
+  text-align: left;
+}
+
+#content-infos .abstract {
+    text-align: justify;
+}
+
+#content-infos .abstract:before {
+    content: "Abstract: ";
+    font-weight: bold;
+}
+
+#content-infos img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 600px;
+  max-width: 600px;
+  min-width: 100%;
+  margin-top: 10px;
+}
+
+#content-infos .paper:before {
+  font-family: "FontAwesome";
+  content: "\f1ea  ";
+}
+
+#content-infos .colab:before {
+  content:url('../docs/colab_icon.png');
+  width: 1em;
+  height: 1em;
+}
+
+/*----------------------------------------------
+    slides
+----------------------------------------------*/
+#slides {
+  max-width:600px;
+  width: 90%;
+  aspect-ratio: 16/9;
+  margin: 20px auto 0 auto;
+}
+
+#slides iframe  {
+  width: 100%;
+  height: 100%;
+}
+
+/*----------------------------------------------
+    live
+----------------------------------------------*/
+#live {
+  max-width:600px;
+  width: 90%;
+  aspect-ratio: 16/9;
+  margin: 20px auto 0 auto;
+}
+
+#live iframe  {
+  width: 100%;
+  height: 100%;
+}
+/*----------------------------------------------
+    tags
+----------------------------------------------*/
+.tags:before {
+  font-size: 1.2em;
+  vertical-align: text-top;
+  content: "\f02c  ";
+}
+
+.tags {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 600px;
+}
+  
+.tags li {
+  display: inline-block;
+  background-color:#768390;
+  color: #FFF;
+  padding: 5px;
+  margin: 0 -1px 1px 0;
+  border-radius: 3px;
+  font-size: 10px;
+}
+  
+.tags a {
+  text-decoration: none;
+}
+
+hr {
+  margin-top: 40px;
+  color: #768390;
+}
+
+@media screen and (max-width: 1280px) {
+  .infos {
+    position:relative;
+    left: unset;
+    max-width: 600px;
+    width: 90%;
+    margin: 20px auto 0 auto;
+  }
+}
