@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>AI Reading group</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/pages.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center">Transformers: Attention is all you need!</h1>
+    </header>
+
+    <div class="carousel-nav">
+        <a id="home-button" href="../../index.html">home</a>
+        <button id="infos-button" onclick="showContentInfos()">infos</button>
+        <button id="slides-button" onclick="showSlides()">slides</button>
+    </div>
+    <div class="infos">
+        <p class="speaker">Florian Lemarchant</p>
+        <p class="date">jan. 21, 2021</p>
+        <p class="place">Zoom</p>
+        <ul class="tags">
+            <li>Transformer</li>
+            <li>Transformer</li>
+        </ul>
+    </div>
+    <div id="content-infos">
+        <p class="abstract">
+            While the Transformer architecture has become the de-facto standard for natural language
+            processing tasks, its applications to computer vision remain limited. In vision,
+            attention is either applied in conjunction with convolutional networks, or used to
+            replace certain components of convolutional networks while keeping their overall
+            structure in place. It has been shown that this reliance on CNNs is not necessary and a
+            pure transformer applied directly to sequences of image patches can perform very well on
+            multiple image tasks.
+        </p>
+        <img src="docs/header.gif" alt="illustration">
+        <hr>
+        <p><a href="https://colab.research.google.com/drive/1swXWW5sOLW8zSZBaQBYcGQkQ_Bje_bmI" class="colab">
+                Implementation of a transformer using pytorch and pytorch-lightning
+            </a></p>
+        <p><a href="https://arxiv.org/pdf/2101.01169.pdf" class="paper">
+                Salman Khan and Muzammal Naseer and Munawar Hayat and Syed Waqas Zamir and Fahad Shahbaz Khan and
+                Mubarak Shah. 2021. Transformers in Vision: A Survey.
+            </a></p>
+        <p><a href="https://arxiv.org/pdf/2012.00364.pdf" class="paper">
+                Hanting Chen and Yunhe Wang and Tianyu Guo and Chang Xu and Yiping Deng and Zhenhua Liu and Siwei Ma
+                and Chunjing Xu and Chao Xu and Wen Gao. 2021. Pre-Trained Image Processing Transformer.
+            </a></p>
+        <p><a href="https://arxiv.org/pdf/2010.11929.pdf" class="paper">
+                Alexey Dosovitskiy and Lucas Beyer and Alexander Kolesnikov and Dirk Weissenborn and Xiaohua Zhai
+                and Thomas Unterthiner and Mostafa Dehghani and Matthias Minderer and Georg Heigold and Sylvain
+                Gelly and Jakob Uszkoreit and Neil Houlsby. 2021. An Image is Worth 16x16 Words: Transformers for
+                Image Recognition at Scale.
+            </a></p>
+    </div>
+    <div id="slides">
+        <iframe src="./docs/slides.pdf"></iframe>
+    </div>
+    <script src="../../src/pages-nav.js"></script>
+    <script>
+        showContentInfos();
+    </script>
+
+</body>
+
+</html>
