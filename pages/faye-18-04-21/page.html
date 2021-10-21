@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>AI Reading group</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/pages.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center">Dense-Gated Blocks, towards layers relationships in densely connected blocks</h1>
+    </header>
+
+    <div class="carousel-nav">
+        <a id="home-button" href="../../index.html">home</a>
+        <button id="infos-button" onclick="showContentInfos()">infos</button>
+        <button id="slides-button" onclick="showSlides()">slides</button>
+        <button id="live-button" onclick="showLive()">live</button>
+    </div>
+    <div class="infos">
+        <p class="speaker">Joseph Faye</p>
+        <p class="date">mar. 18 2021</p>
+        <p class="place">Zoom</p>
+        <ul class="tags">
+            <li>CNN</li>
+        </ul>
+    </div>
+    <div id="content-infos">
+        <p class="abstract">
+            ResNet [2], Highway networks [3] to DenseNet [4], adding more inter-layer connections besides the direct
+            connection in adjacent layers, emerged as popular approaches to strengthen feature propagation among
+            different layers. However, dense connections cause much redundancy especially in the case of DenseNet.
+            Another aspect is that for many dense connections from previous layers, the role played by the mainstream
+            module is unclear. To address these issues, authors introduce a gating mechanism, inspired by SENeT [5] to
+            model the layer relationships in densely connected blocks.
+        </p>
+        <img src="docs/header.jpeg" alt="illustration">
+        <hr>
+        <p><a href="https://ieeexplore.ieee.org/abstract/document/9301852" class="paper">
+                [1] JJi, Zhongyi and Han, Xiao and Lin, Tong and Wang, Wenmin. 2020. A Dense-Gated U-Net for Brain
+                Lesion
+                Segmentation.
+            </a></p>
+        <p><a href="https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf"
+                class="paper">
+                [2] He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian. 2016. Deep Residual Learning for
+                Image
+                Recognition.
+            </a></p>
+        <p><a href="https://arxiv.org/pdf/1505.00387.pdf" class="paper">
+                [3] Rupesh Kumar Srivastava and Klaus Greff and Jürgen Schmidhuber. 2015. Highway Networks.
+            </a></p>
+        <p><a href="https://arxiv.org/pdf/1608.06993.pdf" class="paper">
+                [4] Gao Huang and Zhuang Liu and Laurens van der Maaten and Kilian Q. Weinberger. 2018. Densely
+                Connected
+                Convolutional Networks.
+            </a></p>
+        <p><a href="https://openaccess.thecvf.com/content_cvpr_2018/papers/Hu_Squeeze-and-Excitation_Networks_CVPR_2018_paper.pdf"
+                class="paper">
+                [5] Jie Hu and Li Shen and Samuel Albanie and Gang Sun and Enhua Wu. 2019. Squeeze-and-Excitation
+                Networks.
+            </a></p>
+    </div>
+    <div id="slides">
+        <iframe src="./docs/slides.pdf"></iframe>
+    </div>
+    <div id="live"><iframe
+            src="https://videos.insa-rennes.fr/video/0156-vaader-reading-group-5-joseph-faye-dense-gated-blocks-towards-layers-relationships-in-densely-connected-blocks/?is_iframe=true"
+            allowfullscreen></iframe>
+    </div>
+    <script src="../../src/pages-nav.js"></script>
+    <script>
+        showContentInfos();
+    </script>
+
+</body>
+
+</html>
