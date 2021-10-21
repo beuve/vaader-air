@@ -35,9 +35,15 @@
 }
 
 .carousel-nav button:hover {
-  border-bottom: 2px solid;
+  border-bottom: 2px solid #ffb4b4;
+  color: #ffb4b4;
+}
+
+.carousel-nav .active {
+  border-bottom: 2px solid #FF6B6B;
   color: #FF6B6B;
 }
+
 
 .carousel-nav #home-button {
   border: 2px solid #FFF;
@@ -48,9 +54,9 @@
 }
 
 .carousel-nav #home-button:hover  {
-  border: 2px solid #FF6B6B;
+  border: 2px solid #ffb4b4;
+  color: #ffb4b4;
   border-radius: 5px;
-  color: #FF6B6B;
 }
 
 .carousel-nav #home-button:hover::before  {
