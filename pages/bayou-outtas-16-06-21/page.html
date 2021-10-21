@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>AI Reading group</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/pages.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center">Supervised learning to approximate model observer in task-based measure of image quality
+        </h1>
+    </header>
+
+    <div class="carousel-nav">
+        <a id="home-button" href="../../index.html">home</a>
+        <button id="infos-button" onclick="showContentInfos()">infos</button>
+        <button id="slides-button" onclick="showSlides()">slides</button>
+        <button id="live-button" onclick="showLive()">live</button>
+    </div>
+    <div class="infos">
+        <p class="speaker">Meriem Bayou-Outtas</p>
+        <p class="date">Jun. 16 2021</p>
+        <p class="place">Zoom</p>
+        <ul class="tags">
+            <li>Deep Learning</li>
+        </ul>
+    </div>
+    <div id="content-infos">
+        <p class="abstract">
+            The ability of an observer to perform a specific task on images, produced by a given medical imaging
+            systems, defines an objective measure of image quality.
+            If the observer is “numerical”, can deep learning methods “do the job”? What we found in the literature?
+            Some papers rise this issue and propose to approximate the Ideal Observer for performing tasks detection and
+            localization.
+        </p>
+        <hr>
+        <p><a href="https://ieeexplore.ieee.org/ielaam/42/8854342/8691467-aam.pdf" class="paper">
+                Zhou W, Li H, Anastasio MA. 2019. Approximating the Ideal Observer and Hotelling Observer for Binary
+                Signal Detection Tasks by Use of Supervised Learning Methods. </a></p>
+        <p><a href="https://ieeexplore.ieee.org/document/9139307" class="paper">
+                Zhou, Weimin and Li, Hua and Anastasio, Mark A. 2020. Approximating the Ideal Observer for Joint Signal
+                Detection and Localization Tasks by use of Supervised Learning Methods.
+            </a></p>
+        <p><a href="https://pubmed.ncbi.nlm.nih.gov/33929958/" class="paper">
+                Li K, Zhou W, Li H, Anastasio MA. 2021. Assessing the Impact of Deep Neural Network-Based Image
+                Denoising on Binary Signal Detection Tasks.
+            </a></p>
+    </div>
+    <div id="slides">
+        <iframe src="./docs/slides.pdf"></iframe>
+    </div>
+    <div id="live"><iframe
+            src="https://videos.insa-rennes.fr/video/0298-vaader-reading-group-9-meriem-outtas-supervised-learning-to-approximate-model-observer-in-task-based-measure-of-image-quality/?is_iframe=true"
+            allowfullscreen></iframe>
+    </div>
+    <script src="../../src/pages-nav.js"></script>
+    <script>
+        showContentInfos();
+    </script>
+
+</body>
+
+</html>
