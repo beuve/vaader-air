@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>AI Reading group</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/pages.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center">Travel in the Deep Learning</h1>
+    </header>
+
+    <div class="carousel-nav">
+        <a id="home-button" href="../../index.html">home</a>
+        <button id="infos-button" onclick="showContentInfos()">infos</button>
+        <button id="slides-button" onclick="showSlides()">slides</button>
+        <button id="live-button" onclick="showLive()">live</button>
+    </div>
+    <div class="infos">
+        <p class="speaker">Mouath Aouayeb</p>
+        <p class="date">apr. 22 2021</p>
+        <p class="place">Zoom</p>
+        <ul class="tags">
+            <li>Deep learning</li>
+        </ul>
+    </div>
+    <div id="content-infos">
+        <p class="abstract">
+            Traveling at the time of coronavirus is difficult with the restrictions set by governments all around the
+            world and that’s why most international meetings and conferences are held online. On the other side, deep
+            learning has grown significantly in the past few years and especially for vision applications. Different
+            architectures and models from CNNs to Transformers have been proposed. In this talk, we will not present
+            another model, but we will list different techniques, layers, loss functions, and optimizers that can
+            improve the performance of your model. Also, an analogy between travel and deep learning is presented in the
+            beginning.
+        </p>
+    </div>
+    <div id="slides">
+        <iframe src="./docs/slides.pdf"></iframe>
+    </div>
+    <div id="live">
+        <iframe
+            src="https://videos.insa-rennes.fr/video/0243-vaader-reading-group-7-mouath-aouayeb-travel-in-the-deep-learning/?is_iframe=true"
+            allowfullscreen></iframe>
+    </div>
+    <script src="../../src/pages-nav.js"></script>
+    <script>
+        showContentInfos();
+    </script>
+
+</body>
+
+</html>
