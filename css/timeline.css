@@ -88,6 +88,9 @@
 .timeline-content {
   padding-bottom: 40px;
 }
+.timeline-content p {
+  text-align: justify;
+}
 .timeline-content p:last-child {
   margin-bottom: 0;
 }
