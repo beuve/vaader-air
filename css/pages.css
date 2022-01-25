@@ -13,7 +13,6 @@
 .carousel-nav {
   display: flex;
   margin: 0 auto;
-  justify-content: space-between;
   max-width: 600px;
   width: 80%;
   margin-top: -35px;
@@ -21,6 +20,11 @@
   margin-bottom: 30px;
 }
 
+.carousel-nav nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
 
 .carousel-nav  button{
   border: unset;
