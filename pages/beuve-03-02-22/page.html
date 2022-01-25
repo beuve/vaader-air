@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>AI Reading group</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/pages.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center">Graph Attention Network</h1>
+    </header>
+
+    <div class="carousel-nav">
+        <a id="home-button" href="../../index.html">home</a>
+        <nav>
+            <button id="infos-button" onclick="showContentInfos()">infos</button>
+        </nav>
+    </div>
+    <div class="infos">
+        <p class="speaker">Nicolas Beuve</p>
+        <p class="date">feb. 03 2022</p>
+        <p class="place">Room 226 / <a
+                href="https://insa-rennes-fr.zoom.us/j/95718740292?pwd=VlVqUEhuTnNPYjhSWXM5aDNmeWE5QT09">
+                Zoom
+            </a></p>
+        <ul class="tags">
+            <li>GNN</li>
+            <li>Attention</li>
+        </ul>
+    </div>
+    <div id="content-infos">
+        <p class="abstract">the Graph Attention Network (GAT) is a Graph Neural Network (GNN) using attention to
+            represent relative importance of neighbooring nodes in a graph. GNNs are a special kind of
+            neural network operating on graphs. At first glance, they seem to be not very suitable for image
+            analysis, but after an in-depth analysis of the Graph Attention Network, we will see an example of
+            application of such model in superpixel image classification.
+        </p>
+        <img src="docs/header.gif" alt="illustration">
+        <hr>
+        <p><a href="https://arxiv.org/abs/1710.10903" class="paper">
+                Petar Veličković and Guillem Cucurull and Arantxa Casanova and Adriana Romero and Pietro Liò and Yoshua
+                Bengio. 2018. Graph Attention Networks.
+            </a></p>
+        <p><a href="https://arxiv.org/abs/2002.05544" class="paper">
+                Pedro H. C. Avelar and Anderson R. Tavares and Thiago L. T. da Silveira and Cláudio R. Jung and Luís C.
+                Lamb. 2020. Superpixel Image Classification with Graph Attention Networks.
+            </a></p>
+        <p><a href="https://arxiv.org/abs/1706.02216" class="paper">
+                William L. Hamilton and Rex Ying and Jure Leskovec. 2018. Inductive Representation Learning on Large
+                Graphs.
+            </a></p>
+    </div>
+    <script src="../../src/pages-nav.js"></script>
+    <script>
+        showContentInfos();
+    </script>
+
+</body>
+
+</html>
