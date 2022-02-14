@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>AI Reading group</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/pages.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center">Hue-Net: Intensity-based Image-to-Image
+            Translation with Differentiable Histogram Loss Functions</h1>
+    </header>
+
+    <div class="carousel-nav">
+        <a id="home-button" href="../../index.html">home</a>
+        <nav>
+            <button id="infos-button" onclick="showContentInfos()">infos</button>
+        </nav>
+    </div>
+    <div class="infos">
+        <p class="speaker">Joseph Faye</p>
+        <p class="date">feb. 17 2022</p>
+        <p class="place">Room 226 / <a
+                href="https://insa-rennes-fr.zoom.us/j/94428783250?pwd=TE4vRVJ2bndKNGNtN1JLTUg4NUJTZz09">
+                Zoom
+            </a></p>
+        <ul class="tags">
+            <li>Image-to-Image</li>
+            <li>Deep Learning</li>
+        </ul>
+    </div>
+    <div id="content-infos">
+        <p class="abstract">Image-to-image translation is a computer vision task aiming to learn the mapping between an
+            input image from one domain to an output image from another domain following the style or characteristics.
+            It can be applied to a wide range of applications, such as collection style transfer, object
+            transfiguration, season transfer, and photo enhancement. Hue-Net is a deep learning framework for
+            intensity-based Image-to-Image translation. It introduces a differentiable representation of (1D) cyclic and
+            (2D) joint histograms and uses them for defining loss functions based on cyclic Earth Mover's Distance (EMD)
+            and Mutual Information (MI). The of Hue-Net strength has been demonstrated on color transfer problems, where
+            the aim is to paint a source image with the colors of a different target image.
+        </p>
+        <img src="docs/header.png" alt="illustration">
+        <hr>
+        <p><a href="https://arxiv.org/abs/1710.10903" class="paper">
+                Mor Avi-Aharon and Assaf Arbelle and Tammy Riklin Raviv. 2019. Hue-Net: Intensity-based Image-to-Image
+                Translation with Differentiable Histogram Loss Functions.
+            </a></p>
+    </div>
+    <script src="../../src/pages-nav.js"></script>
+    <script>
+        showContentInfos();
+    </script>
+
+</body>
+
+</html>
