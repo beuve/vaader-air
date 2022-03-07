@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>AI Reading group</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/pages.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center">Understanding Deep Learning (Still) Requires Rethinking Generalization</h1>
+    </header>
+
+    <div class="carousel-nav">
+        <a id="home-button" href="../../index.html">home</a>
+        <nav>
+            <button id="infos-button" onclick="showContentInfos()">infos</button>
+            <button id="slides-button" onclick="showSlides()">slides</button>
+            <button id="live-button" onclick="showLive()">live</button>
+        </nav>
+    </div>
+    <div class="infos">
+        <p class="speaker">Alban Marie</p>
+        <p class="date">Mar. 10 2022</p>
+        <p class="place">Room 229 / <a
+                href="https://insa-rennes-fr.zoom.us/j/94455982412?pwd=SnprU0ZsUTQvdFcwdnhHTmFOcDNPdz09">
+                Zoom
+            </a></p>
+        <ul class="tags">
+            <li>Deep Learning</li>
+        </ul>
+    </div>
+    <div id="content-infos">
+        <p class="abstract">Despite their massive size, successful deep artificial neural networks can exhibit a
+            remarkably small gap between train- ing and test performance. Conventional wisdom attributes small
+            generalization error either to properties of the model family or to the regularization techniques used
+            during training.
+            Through extensive systematic experiments, we show how these traditional approaches fail to explain why large
+            neural networks generalize well in practice. Specifically, our experi- ments establish that state-of-the-art
+            convolutional networks for image classification trained with stochastic gradient methods easily fit a random
+            labeling of the training data. This phenomenon is qualitatively unaffected by explicit regularization and
+            occurs even if we replace the true images by completely unstructured random noise. We corroborate these
+            experimental findings with a theoretical construc- tion showing that simple depth two neural networks
+            already have perfect finite sample expressivity as soon as the num- ber of parameters exceeds the number of
+            data points as it usually does in practice.
+            We interpret our experimental findings by comparison with traditional models.
+            We supplement this republication with a new section at the end summarizing recent progresses in the field
+            since the original version of this paper.
+        </p>
+        <img src="docs/header.jpg" alt="illustration">
+        <hr>
+        <p><a href="https://dl.acm.org/doi/pdf/10.1145/3446776" class="paper">
+                Zhang, Chiyuan and Bengio, Samy and Hardt, Moritz and Recht, Benjamin and Vinyals, Oriol. 2021.
+                Understanding Deep Learning (Still) Requires Rethinking Generalization.
+            </a></p>
+    </div>
+    <div id="slides" style="aspect-ratio: 4/3;">
+        <iframe src="./docs/slides.pdf"></iframe>
+    </div>
+    <div id="live"><iframe
+            src="https://videos.insa-rennes.fr/video/0481-vaader-reading-group-13-alban-marie-understanding-deep-learning-still-requires-rethinking-generalization-10-mars-2022-17-fevrier-2022/?is_iframe=true"
+            width="640" height="360" style="padding: 0; margin: 0; border:0" allowfullscreen></iframe>
+    </div>
+    <script src="../../src/pages-nav.js"></script>
+    <script>
+        showContentInfos();
+    </script>
+
+</body>
+
+</html>
