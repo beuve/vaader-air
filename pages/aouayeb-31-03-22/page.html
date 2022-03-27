@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>AI Reading group</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/pages.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center">Educating neural networks</h1>
+    </header>
+
+    <div class="carousel-nav">
+        <a id="home-button" href="../../index.html">home</a>
+        <nav>
+            <button id="infos-button" onclick="showContentInfos()">infos</button>
+            <button id="slides-button" onclick="showSlides()">slides</button>
+            <button id="live-button" onclick="showLive()">live</button>
+        </nav>
+    </div>
+    <div class="infos">
+        <p class="speaker">Mouath Aouayeb</p>
+        <p class="date">mar. 31 2022</p>
+        <p class="place">Room 229 / <a
+                href="https://insa-rennes-fr.zoom.us/j/98387898305?pwd=VTlJbGFZWE5wSithU0tKK3Z5SERGdz09">
+                Zoom
+            </a></p>
+        <ul class="tags">
+            <li>Deep learning</li>
+            <li>ViT</li>
+            <li>Transformer</li>
+        </ul>
+    </div>
+    <div id="content-infos">
+        <p class="abstract">
+            It is more than hundreds of years of evolution of our education system. Thanks to that, today, the growth of
+            the research is astonishing. Now we are making machines learn. And new robust and optimized models are
+            trained day after day: from Neural Network to CNN to ViT.
+            So, if we consider the DL models as the students of the machine education system,one could ask: Is ViT a
+            Ph.D. student?
+            This talk presents an analogy between the human education system and the deep learning system. Furthermore,
+            different techniques dedicated to training transformers on mid-small databases alongside a novel hybrid
+            model of ViT and CNN are presented.
+        </p>
+        <img src="docs/header.jpg" alt="illustration">
+        <hr>
+        <p><a href="https://arxiv.org/pdf/2106.03348.pdf" class="paper">
+                Xu Yufei, Zhang Qiming, Zhang Jing and Tao Dacheng. 2021. ViTAE: Vision Transformer Advanced by
+                Exploring Intrinsic Inductive Bias.
+            </a></p>
+        <p><a href="https://arxiv.org/pdf/2106.03746.pdf" class="paper">
+                Yahui Liu, Enver Sangineto, Wei Bi, Nicu Sebe, Bruno Lepri and Marco De Nadai. 2021. Efficient Training
+                of Visual Transformers with Small Datasets.
+            </a></p>
+        <p><a href="https://arxiv.org/pdf/2010.01412.pdf" class="paper">
+                Pierre Foret, Ariel Kleiner, Hossein Mobahi and Behnam Neyshabur. 2020. Sharpness-Aware Minimization for
+                Efficiently Improving Generalization.
+            </a></p>
+        <p><a href="https://arxiv.org/pdf/1912.02781.pdf" class="paper">
+                Dan Hendrycks, Norman Mu, Ekin D. Cubuk, Barret Zoph, Justin Gilmer and Balaji Lakshminarayanan. 2019.
+                AugMix: A Simple Data Processing Method to Improve Robustness and Uncertainty.
+            </a></p>
+    </div>
+    <div id="slides">
+        <iframe src="./docs/slides.pdf"></iframe>
+    </div>
+    <div id="live">
+        <iframe
+            src="https://videos.insa-rennes.fr/video/0484-vaader-reading-group-14-mouath-aouayeb-educating-neural-networks-31-mars-2022/6982acc37f944c39d3ed075d57e8f076e719636ffe681d5643eca963f09cd5a1/?is_iframe=true"
+            width="640" height="360" style="padding: 0; margin: 0; border:0" allowfullscreen></iframe>
+    </div>
+    <script src="../../src/pages-nav.js"></script>
+    <script>
+        showContentInfos();
+    </script>
+
+</body>
+
+</html>
